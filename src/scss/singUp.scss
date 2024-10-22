@@ -1,0 +1,271 @@
+.signUp {
+    padding: 40px 0;
+
+    @media (max-width:900px) {
+        padding: 30px 0;
+    }
+
+    @media (max-width:500px) {
+        padding: 20px 0;
+    }
+}
+
+h1 {
+    margin: 60px;
+    text-align: center;
+    font-size: 41px;
+    font-weight: 600;
+
+    @media (max-width:900px) {
+        margin: 50px;
+        font-size: 35px;
+    }
+
+    @media (max-width:500px) {
+        margin: 20px;
+        font-size: 25px;
+
+    }
+}
+
+form {
+    max-width: 610px;
+    margin: 40px auto 0;
+    border: 1px solid #B8B8B8;
+    border-radius: 10px;
+    padding: 40px;
+
+    @media (max-width:900px) {
+        margin: 35px auto 0;
+        max-width: 490px;
+        padding: 30px;
+    }
+
+    @media (max-width:500px) {
+        margin: 20px auto 0;
+        font-size: 30px;
+        max-width: 340px;
+        padding: 10px;
+    }
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 25px;
+
+    label {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    input {
+        padding: 18px 20px;
+        font-size: 18px;
+        font-weight: 400;
+        border: 1px solid #B8B8B8;
+        border-radius: 10px;
+
+    }
+
+    i {
+        position: absolute;
+        top: calc(100% - 40px);
+        left: calc(100% - 30px);
+        font-size: 20px;
+        color: #4EB2DD;
+        display: none;
+    }
+
+
+
+    input:focus {
+        outline: none;
+    }
+
+    textarea {
+        padding: 18px 20px;
+        font-size: 18px;
+        font-weight: 400;
+        resize: none;
+        border: 1px solid #B8B8B8;
+        border-radius: 10px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    span {
+        color: #868686;
+        font-weight: 400;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    @media (max-width:900px) {
+        margin-top: 15px;
+
+        label {
+            margin-bottom: 8px;
+            font-size: 17px;
+        }
+
+        input {
+            padding: 10px 15px;
+            font-size: 14px;
+            border-radius: 8px;
+        }
+
+        textarea {
+            padding: 10px 15px;
+            font-size: 14px;
+            border-radius: 8px;
+        }
+
+        span {
+            font-size: 14px;
+            margin-top: 8px;
+        }
+    }
+
+    @media (max-width:500px) {
+        margin-top: 10px;
+
+        label {
+            margin-bottom: 5px;
+            font-size: 15px;
+        }
+
+        input {
+            padding: 5px 10px;
+            font-size: 12px;
+            border-radius: 8px;
+        }
+
+        textarea {
+            padding: 5px 10px;
+            font-size: 12px;
+            border-radius: 5px;
+        }
+
+        span {
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    }
+
+}
+
+.ownership_radios {
+
+
+    label {
+        margin: 0 0 0 10px;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    input {
+        width: 20px;
+        height: 20px;
+    }
+
+    .radio_group_item {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+    }
+
+    .radio_group_item:first-child {
+        margin-top: 0;
+    }
+
+    @media (max-width:900px) {
+
+        .radio_group_item {
+            display: flex;
+            align-items: center;
+            margin-top: 12px;
+        }
+
+        label {
+            margin: 0 0 0 8px;
+            font-size: 14px;
+        }
+
+        input {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    @media (max-width:500px) {
+        label {
+            margin: 0 0 0 5px;
+            font-size: 12px;
+        }
+
+        input {
+            width: 10px;
+            height: 10px;
+        }
+
+        .radio_group_item {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+        }
+    }
+}
+
+.form_buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    button {
+        text-transform: capitalize;
+        width: calc(50% - 5px);
+        border: 1px solid #4EB2DD;
+        border-radius: 10px;
+        padding: 18px 0;
+        font-size: 18px;
+        font-weight: 600;
+
+        @media (max-width:900px) {
+            padding: 15px 0;
+            font-size: 15px;
+        }
+
+        @media (max-width:500px) {
+            padding: 12px 0;
+            font-size: 12px;
+
+        }
+    }
+
+    #cancel_btn {
+        color: #4EB2DD;
+        background-color: #FFFFFF;
+    }
+
+    #next_btn {
+        color: #FFFFFF;
+        background-color: #4EB2DD;
+    }
+
+    @media (max-width:900px) {
+        margin-top: 30px;
+    }
+
+    @media (max-width:500px) {
+        margin-top: 20px;
+    }
+}

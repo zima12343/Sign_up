@@ -1,0 +1,121 @@
+.sign-up-steps {
+    max-width: 930px;
+    margin: auto;
+    ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: -15px;
+
+        li{
+            margin: 0 15px;
+            font-size: 16px;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            width: 25%;
+            position: relative;
+            text-align: center;
+            color: #C8C8C8;
+
+            @media (max-width:900px) {
+                font-size: 13px;
+                margin: 0 10px;
+            }
+
+            @media (max-width:500px) {
+                font-size: 10px;
+                margin: 0 5px;
+            }
+        }
+
+        .current_step{
+            color: #4EB2DD;
+        }
+
+        .complete_step {
+            color: #000000;
+        }
+    }
+}
+
+.stepper{
+
+    margin-top: 10px;
+    li{
+        width: 25%;
+        
+
+        span {
+            display: block;
+            width: 15px;
+            height: 15px;
+            border: 2px solid #E4E4E4;
+            border-radius: 50%;
+            margin: auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        &::after {
+            content: "";
+            width: calc(100% + 17px);
+            height: 2px;
+            position: absolute;
+            background-color: #E4E4E4;
+            top: 50%;
+            left: calc(-50% - 24px);
+            z-index: 1;
+        }
+
+        @media (max-width:900px) {
+            &::after {
+                content: "";
+                width: calc(100% + 7px);
+                height: 2px;
+                position: absolute;
+                background-color: #E4E4E4;
+                top: 50%;
+                left: calc(-50% - 14px);
+                z-index: 1;
+            }
+        }
+
+        @media (max-width:500px) {
+            &::after {
+                content: "";
+                width: calc(100% - 1px);
+                height: 2px;
+                position: absolute;
+                background-color: #E4E4E4;
+                top: 50%;
+                left: calc(-50% - 5px);
+                z-index: 1;
+            }
+        }
+
+        &:first-child::after {
+            content: "";
+            width: 0;
+            height: 0;
+        }
+    }
+
+    .complete_step {
+        span {
+            border-color: #4EB2DD;
+            background-color: #4EB2DD;
+        }
+        &::after {
+            background-color:#4EB2DD;
+        }    
+    }
+
+    .current_step {
+        span {
+            border-color: #4EB2DD;
+        }
+        &::after {
+            background-color:#4EB2DD;
+        }   
+    }
+}

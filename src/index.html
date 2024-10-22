@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/index.scss">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="signUp">
+        <div class="sign-up-steps">
+            <ul>
+                <li class="current_step">Общая информация</li>
+                <li>Контактная информация</li>
+                <li>Информация о руководители</li>
+                <li>Подтверждение электронной почты</li>
+            </ul>
+
+            <ul class="stepper">
+                <li class="current_step"><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+                <li><span></span></li>
+            </ul>
+        </div>
+
+        <h1>Регистрация</h1>
+
+        <form class="sign_up_form">
+            <div class="unp  form-input">
+                <label for="unp_text">УНП</label>
+                <input id="unp_text" type="text" placeholder="Введите УНП"> <i class="fa-solid fa-circle-check"></i></input>
+            </div>
+
+            <div class="unp_name form-input">
+                <label for="unp_name_text">Полное наименование</label>
+                <textarea id="unp_name_text" type="text" rows="1" disabled></textarea>
+            </div>
+
+            <div class="unp_small_name form-input">
+                <label for="unp_small_name_text">Сокращенное наименование</label>
+                <input id='unp_small_name_text' type="text" disabled></input>
+            </div>
+
+            <div class="unp_type form-input">
+                <label for="unp_type_text">Вид деятельности</label>
+                <textarea id="unp_type_text" rows="3"></textarea>
+                <span>Например, продажа автозапчастей</span>
+            </div>
+            <div class="ownership_form form-input" form-input>
+                <label>Форма собственности</label>
+                <div class="ownership_radios">
+                    <div class="radio_group_item">
+                        <input type="radio" id="IP" name="ownership_form_radio" value="0" checked />
+                        <label for="IP">Индивидуальный пердприменатель</label>
+                    </div>
+                    <div class="radio_group_item">
+                        <input type="radio" id="Urli" name="ownership_form_radio" value="1" />
+                        <label for="Urli">Юридическое лицо</label>
+                    </div>
+                    <div class="radio_group_item">
+                        <input type="radio" id="sz" name="ownership_form_radio" value="2" />
+                        <label for="sz">Самозанятый</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="date_signing form-input">
+                <label for="date_signing_text">Дата свидетельства о регистрации</label>
+                <input type="text" id="date_signing_text" placeholder="Введите дату свидетельства о регистрации" onfocus="(this.type='date')"/>
+            </div>
+            <div class="form_buttons">
+                <button type="button" id="cancel_btn">Отмена</button>
+                <button type="button" id="next_btn">Далее</button>
+            </div>
+        </form>
+    </div>
+    <script src="./scritps/index.js"></script>
+</body>
+
+</html>
